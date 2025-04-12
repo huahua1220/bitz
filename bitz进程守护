@@ -1,0 +1,18 @@
+import subprocess
+import time
+
+def run_command(command):
+    try:
+        subprocess.run(command, shell=True, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"fail")
+
+
+command = r"bitz collect --cores 16 --keypair /home/ubuntu/.config/solana/id2.json --fee-payer /home/ubuntu/.config/solana/id.json"
+#自己改一下路径，前面是多开的子地址keypair路径，后面是支付gas的主地址keypair路径，子地址需要放0.0005eth满足最低启动值
+interval = 10  
+while True:
+    print("running...")
+    run_command(command)
+    print(f"waiting...")
+    time.sleep(interval)
