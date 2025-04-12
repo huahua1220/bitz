@@ -16,3 +16,5 @@ while True:
     run_command(command)
     print(f"waiting...")
     time.sleep(interval)
+
+### 启动代码就在根目录输入python3 bitz.py执行
