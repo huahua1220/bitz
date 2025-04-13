@@ -1,6 +1,6 @@
 #!/bin/bash
-#保存之后在根目录运行一下chmod +x claim.sh
-#然后./claim.sh运行
+#第一次创建保存之后，在根目录运行一下chmod +x claim.sh
+#之后直接./claim.sh运行
 
 # 支付gas的keypair路径
 FEE_PAYER="/home/ubuntu/.config/solana/id.json"
