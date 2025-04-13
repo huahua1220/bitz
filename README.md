@@ -1,1 +1,1 @@
-claim.sh是bitz批量领取脚本，适用于同服务器多开
+claim.sh是bitz批量领取脚本，需要所有需要领取的keypair按顺序命名，放在一个目录下
